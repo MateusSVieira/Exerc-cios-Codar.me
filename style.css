@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap');
+
+:root {
+    --grayscale100: #fff;
+    --grayscale200: #F5F4F6;
+    --grayscale300: #D6D4E2;
+    --grayscale400: #787490;
+    --grayscale900: #18161F;
+    font-family: 'Space Grotesk';
+}
+
+body {
+    display: flex;
+    
+}
+
+aside {
+    width: 16rem;
+    height: 100vh;
+    background: var(--grayscale200);
+    border-right: 1px solid var(--grayscale300);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4.5rem;  
+}
+
+.profile {
+    background: var(--grayscale200);
+    border-block: 1px solid var(--grayscale300);
+    display: flex;
+    align-items: center;
+    height: 4.5rem; 
+}
+
+.profileimage {
+    margin-left: 1.5rem;
+}
+
+.profilename {
+    margin-left: 1rem;
+}
+
+.profilename h2 {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.profilename p {
+    font-weight: 400;
+    font-size: 0.75rem;
+}
+
+.navigation {
+    background: var(--grayscale200);
+    display: flex; 
+}
+
+.navigation li > a{
+    display: flex;
+    align-items: center;
+    padding-inline: 1.75rem;
+    text-decoration: none;
+    color: inherit;    
+}
+
+.navigation li {
+    font-weight: 500;
+    font-size: 1rem;
+    margin-top: 2rem;   
+}
+
+.navigation li:hover, .ativo {
+    color: var(--grayscale300);
+    border-left: 5px solid var(--grayscale900);
+}
+
+.navigation img {
+    margin-right: 1.75rem;
+}
+
+main {
+    background: var(--grayscale200);
+    border: 5px solid var(--grayscale200);
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.data {
+    margin-bottom: 5px;
+    
+}
+
+.data h1 {
+    color: var(--grayscale900);
+    font-weight: 700;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.data p {
+    color: var(--grayscale400);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 1px;
+}
+
+
+.comments {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 10px;
+}
+
+.profiles {
+    background: var(--grayscale100);
+    display: flex;
+    align-items: center;
+    width: 1000px;
+    height: 30px;
+    border: 1px solid var(--grayscale300);
+    border-radius: 16px;
+    padding-block: 12px;
+}
+
+.profiles img {
+    width: 40px;
+    height: 40px;
+    margin-left: 28px;
+    margin-right: 20px;
+}
+
+.names {
+    display: flex;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    color: var(--grayscale900);
+    padding-bottom: 8px;
+}
+
+.profilesaline {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    width: 1000px;
+    height: 30px;
+    border: 1px solid var(--grayscale300);
+    border-radius: 16px 16px 0px 0px;
+    padding-block: 12px;
+    margin-top: 5px;
+}
+
+.profilesaline img {
+    width: 40px;
+    height: 40px;
+    margin-left: 28px;
+    margin-right: 20px;
+}
+
+.time {
+    color: var(--grayscale400);
+    margin-left: 7px;
+    font-weight: 400;
+}
+
+.phrase {
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.likesandcoments {
+    display: flex;
+    width: 1000px;
+    border: 1px solid var(--grayscale300);
+    border-radius: 0px 0px 16px 16px;
+    padding-block: 10px;
+    background: var(--grayscale300);
+}
+
+.likesandcoments img {
+    width: 50px;
+    margin-left: 10px;
+    margin-right: 8px;
+}
+
+.likesandcoments p {
+    font-size: 13px;
+}
+
+span {
+    font-weight: bolder;
+}
+
+/*Cards*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-top: 10px;
+    align-items: flex-start;
+}
+
+.allcards {
+    display: flex;
+}
+
+.cards{
+    margin-inline: 10px;
+
+}
+
+.cards:hover {
+    border: 3px solid var(--grayscale900);
+    border-radius: 32px;
+}
+.photoimage img {
+    width: 250px;
+    height: 130px;
+ }
+
+.content {
+    display: flex;
+    flex-direction: column;
+    background: var(--grayscale100);
+    border-radius: 0px 0px 32px 32px;
+    width: 250px;
+    height: 160px;
+}
+
+.choseday {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--grayscale900);
+    padding-inline: 24px;
+    padding-block: 15px;
+}
+
+.information {
+    display: flex;
+    align-items: center;
+}
+
+.imglyn {
+    width: 25px;
+    height: 25px;
+    margin-left: 24px;
+    margin-right: 16px;
+}
+
+.imgbrad {
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+    margin-right: 16px;
+}
+
+.information h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--grayscale900);
+}
+
+.days {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--grayscale400);
+    padding-right: 10px;
+}
+
+.comentsandview {
+    display: flex;
+    justify-content: space-between;
+    
+   
+}
+
+.comentsandview p {
+    display: flex;
+    align-items: center;
+    padding-inline: 24px;
+    padding-top: 22px;
+    font-size: 14px;
+}
+
+.comentimage {
+    margin-right: 6px;
+    width: 20px;
+}
+
+.viewimage {
+    margin-right: 6px;
+    width: 20px;
+}
+
+@media screen and (max-width: 600px){
+    aside {
+        width: 100vw;
+    }
+}
